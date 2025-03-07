@@ -8,12 +8,15 @@
 <body>
     <script>
 
-       function display(name1, name2)
+       function display()
        {
-        document.write(arguments[0] + " " + arguments[1]);
+        arguments[0]="sabbir";
+        for(var i=0; i < arguments.length; i++){
+            document.write(arguments[i] + " ");
+        }
        }
 
-       display("Rakibul Hasan", "jahidul Islam");
+       display("Rakibul", "jahidul", "jobaer");
 
 
 
