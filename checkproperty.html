@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function Mobile(model_no){
+        this.model = model_no;
+        this.memory = 4;
+
+       }
+       var samsung = new Mobile('Galaxy');
+       var nokia = new Mobile('3310');
+       if(typeof nokia.memory !== 'undefined'){
+        document.write("Available");
+       }
+       else{
+        document.write("Doesn't Exist");
+       }
+   
+
+
+    </script>
+</body>
+</html>
