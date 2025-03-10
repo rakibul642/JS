@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Function</title>
+</head>
+<body>
+    <script>
+      function mobile(){
+          return {
+              model: 'Galaxy',
+              price: function(){
+                return "price Rs.3000";
+              }
+          };
+      }
+      var samsung = mobile();
+      document.write(samsung.model + "  " + samsung.price());
+     
+
+
+    </script>
+</body>
+</html>
