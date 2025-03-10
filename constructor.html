@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <script>
+     function Mobile(model_no){
+        this.model = model_no;
+        this.price = function(){
+            document.write(this.model + " " + "price Bd 30000 <br>");
+        }
+     }
+     var samsung = new Mobile('Galaxy');
+     var nokia = new Mobile('3310');
+     samsung.price();
+     nokia.price();
+
+
+
+
+    </script>
+</body>
+</html>
