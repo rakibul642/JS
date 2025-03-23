@@ -8,19 +8,20 @@
 <body>
     <script>
        var Mobile = function (model_no){
+        //Instance Member
          this.model = model_no;
          this.price = 5000;
        };
        var samsung = new Mobile('Galaxy');
        var nokia = new Mobile ('3310');
        // classname.prototype.key ='value';
+       //prototype member
         Mobile.prototype.color = 'white';
 
-       document.write(samsung.color + "<br>");
-       document.write(samsung.color);
+    for (var key in samsung){
+        document.write(key);
+    }
 
-       console.log(samsung);
-       console.log(nokia);
     
 
 
