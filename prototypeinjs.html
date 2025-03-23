@@ -13,9 +13,12 @@
        };
        var samsung = new Mobile('Galaxy');
        var nokia = new Mobile ('3310');
-       samsung.color = 'white';
-       nokia.color = 'white';
+       // classname.prototype.key ='value';
+        Mobile.prototype.color = 'white';
+
+       document.write(samsung.color + "<br>");
        document.write(samsung.color);
+
        console.log(samsung);
        console.log(nokia);
     
