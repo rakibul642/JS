@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //class Declaratrion
+    class Mobile {
+        constructor(){
+            //Instance member
+            this.a =12;
+            this.show = function (){
+                return "Instance Member";
+            };
+        }
+        //prototype member
+        display(){
+            return " prototype member";
+        }
+    }
+
+    var nokia = new Mobile();
+    document.write(nokia.show());
+
+
+
+
+    </script>
+</body>
+</html>
