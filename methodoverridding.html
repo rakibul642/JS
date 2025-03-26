@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   class Father {
+        show(){
+            return "Super class <br>";
+        }
+   }
+   class son extends Father{
+       show(){
+        return "Sub class";
+       }
+   }
+    var s = new son ();
+    document.write(s.show());
+
+
+    </script>
+</body>
+</html>
