@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Function for Inheritance
+    function extend (child,parent){
+        child.prototype = Object.create(parent.prototype);
+        child.prototype.constructor = child;
+    }
+
+    //super class 
+    var Mobile = function (){
+
+    } 
+    //prototype member
+    Mobile.prototype.show = function(){
+        return "super class method";
+    }
+   //sub class
+   var samsung = function(){
+
+   }
+   //sub class samsung extending super class Mobile
+   extend(samsung,Mobile);
+
+   samsung.prototype.show = function(){
+    return "sub class method";
+   }
+
+   //creating object of the sub class
+   var sam = new samsung();
+   var mob = new Mobile();
+
+   //Accessing supoer class property model
+   //using sub class object
+   document.write(sam.show() + "<br>");
+   document.write(mob.show());
+
+
+    </script>
+</body>
+</html>
