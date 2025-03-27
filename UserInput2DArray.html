@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Defining 2D Array
+        var rows = 3;
+        var cols = 2;
+        var geek = new Array(rows);
+        for( var i =0; i<rows; i++){
+            geek[i]=new Array(cols);
+        } 
+        //Input for Array
+        for (var i = 0; i<rows; i++){
+            for(var j=0; j<cols; j++){
+                geek[i][j]=prompt("Enter Name: ");
+            }
+        }  
+        
+        //Display value
+        for(var i=0; i<rows; i++){
+            for(var j=0; j<cols; j++){
+                document.write(i + " " +j + geek[i][j]+ " | ");
+            }
+            document.write("<br>");
+        }
+
+
+
+
+    </script>
+</body>
+</html>
