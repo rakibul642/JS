@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var noofticket = 5;
+      var buyticket = 6;
+      var eachprice = 200;
+      var disprice = 50;
+
+      function ticket(theory, nticket, eprice, bticket, dprice){
+          if(bticket < 5){
+            dprice = 0;
+            return `${theory[0]} ${nticket} ${theory[1]} ${eprice} ${theory[2]} ${bticket} ${theory[3]} ${dprice} ${theory[4]}`
+          }
+      
+      else{
+        return `${theory[0]} ${nticket} ${theory[1]} ${eprice} ${theory[2]} ${bticket} ${theory[3]} ${dprice} ${theory[4]}`
+      }
+    }
+
+      document.write(ticket`There are ${noofticket} movie tickets Each Bd ${eachprice} and if you buy ${buyticket} tickets get discount Bd. ${disprice} Each`);
+  
+
+
+
+
+    </script>
+</body>
+</html>
