@@ -7,8 +7,17 @@
 </head>
 <body>
     <script>
-      const d = new Date("January 01, 2025");
-      console.log(d.setDate(d.getDate() + 50));
+    
+    function isEvenorOdd(number){
+        if (number % 2 === 0){
+        return "Even";
+        }
+        else{
+            return "Odd";
+        }
+    }
+    console.log(isEvenorOdd(7));
+    console.log(isEvenorOdd(2));
 
 
 
