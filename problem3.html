@@ -7,11 +7,14 @@
 </head>
 <body>
     <script>
-    //Alphabetic serial problem
-    const students = ["shuvo", "israfil", "jahid","niloy"];
+    //Roll number serial
+    const roll_Numbers= [3, 5, 1, 6, 2, 30];
 
-    console.log(students.sort());
+    console.log(roll_Numbers.sort(function(a, b){
 
+        return a - b;
+
+    }));
 
 
 
